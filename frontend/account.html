@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài khoản | ARGBGEAR</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="account.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">
+        <a href="index.html" class="logo-link">
+            <span class="logo-argb">ARGBGEAR</span>
+        </a>
+    </div>
+    <nav class="nav">
+        <a href="index.html">Trang Chủ</a>
+        <a href="shop.html">Sản Phẩm</a>
+        <a href="account.html" class="active">Tài Khoản</a>
+        <a href="cart.html">🛒 Giỏ Hàng</a>
+    </nav>
+</header>
+
+<!-- ACCOUNT -->
+<section class="account-panel active">
+    <h2>Thông tin tài khoản</h2>
+
+    <div class="account-group">
+        <label>Số điện thoại</label>
+        <input type="text" placeholder="Nhập số điện thoại">
+    </div>
+
+    <div class="account-group">
+        <label>Email</label>
+        <input type="email" placeholder="Nhập email">
+    </div>
+
+    <button id="changePasswordBtn" class="change-pass-btn">
+        Đổi mật khẩu
+    </button>
+
+    <div id="passwordBox" class="password-box">
+        <div class="account-group">
+            <label>Mật khẩu hiện tại</label>
+            <input type="password">
+        </div>
+
+        <div class="account-group">
+            <label>Mật khẩu mới</label>
+            <input type="password">
+        </div>
+
+        <div class="account-group">
+            <label>Xác nhận mật khẩu</label>
+            <input type="password">
+        </div>
+    </div>
+
+    <button class="btn-confirm">
+        Xác nhận cập nhật
+    </button>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-bottom">
+        © 2026 ARGB Store. All rights reserved.
+    </div>
+</footer>
+
+<script src="js/account.js"></script>
+</body>
+</html>

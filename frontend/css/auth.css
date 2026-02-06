@@ -1,0 +1,131 @@
+/* ================= LOGIN + REGISTER ================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top, #1b2a4a, #0b1020);
+    color: #fff;
+    min-height: 100vh;
+}
+/* ================= CONTAINER CHUNG ================= */
+
+/* login dùng auth-container */
+/* register dùng auth-box */
+.auth-container,.auth-box {
+    width: 360px;
+    margin: auto;
+    margin-top: 10vh;
+    padding: 10px;
+    background: #111a33;
+    border-radius: 18px;
+    box-shadow: 
+        0 0 20px rgba(0, 255, 255, 0.25),
+        0 0 50px rgba(111, 124, 255, 0.2);;
+    animation:  glow 3s infinite alternate;
+}
+
+/* hiệu ứng phát sáng nhẹ */
+@keyframes glow {
+    from {
+        box-shadow:
+            0 0 20px rgba(0, 255, 255, 0.25),
+            0 0 50px rgba(111, 124, 255, 0.2);
+    }
+    to {
+        box-shadow:
+            0 0 30px rgba(0, 255, 255, 0.4),
+            0 0 70px rgba(111, 124, 255, 0.35);
+    }
+}
+/* ================= TITLE ================= */
+
+.auth-container h1,
+.auth-box h2 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    color: #00fff0;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* ================= FORM ================= */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #b8c7ff;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #263b6f;
+    background: #0b1020;
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #00fff0;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+/* ================= BUTTON ================= */
+
+.btn-auth {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #00fff0, #6f7cff);
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-auth:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+/* ================= MESSAGE (LOGIN) ================= */
+
+.auth-msg {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #ff6b6b;
+}
+
+/* ================= LINK SWITCH ================= */
+
+.auth-switch,
+.auth-link {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.auth-switch a,
+.auth-link a {
+    color: #00fff0;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.auth-switch a:hover,
+.auth-link a:hover {
+    text-decoration: underline;
+}
